@@ -17,7 +17,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
     /// Change the color of the material on a UnityUI Graphic (ex. Image).  Useful for visualizing button presses.
     /// </summary>
     //[AddComponentMenu("Scripts/MRTK/Examples/ColorChangerUnityUI")]
-    public class ColorChange3 : MonoBehaviour
+    public class ColorChanger3 : MonoBehaviour
     {
         [SerializeField]
         private Graphic graphic;
@@ -39,7 +39,11 @@ namespace Microsoft.MixedReality.Toolkit.UI
             }
             else if (state == ColorState.Green)
             {
-
+                graphic.color = Color.green;
+            }
+            else if (state == ColorState.Red)
+            {
+                graphic.color = Color.red;
             }
             
         }
@@ -74,6 +78,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
         }
 
         public void ChangeColor(){
+            Debug.Log("Change Color");
             if (state == ColorState.Grey)
             {
                 state = ColorState.Green;

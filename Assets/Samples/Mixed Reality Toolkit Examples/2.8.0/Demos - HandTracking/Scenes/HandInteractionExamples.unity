@@ -2987,7 +2987,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 83044512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -4658,8 +4658,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208000988}
-  - component: {fileID: 208000991}
   - component: {fileID: 208000990}
+  - component: {fileID: 208000991}
   - component: {fileID: 208000989}
   m_Layer: 0
   m_Name: color indicator toggle 2
@@ -4735,7 +4735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 208000987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -7108,19 +7108,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 087b16002c2b0b445baa3ed3beae44a9, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1236120145181611998}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ToggleFollowMeBehavior
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   Events:
   - Event:
       m_PersistentCalls:
@@ -7394,6 +7382,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4461412805202037974}
+        m_TargetAssemblyTypeName: ExtraInfo, Assembly-CSharp
+        m_MethodName: ToggleExtraInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10524,8 +10524,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420655362}
-  - component: {fileID: 420655365}
   - component: {fileID: 420655364}
+  - component: {fileID: 420655365}
   - component: {fileID: 420655363}
   m_Layer: 0
   m_Name: color indicator toggle 2
@@ -10601,7 +10601,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 420655361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -10812,8 +10812,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433646625}
-  - component: {fileID: 433646628}
   - component: {fileID: 433646627}
+  - component: {fileID: 433646628}
   - component: {fileID: 433646626}
   m_Layer: 0
   m_Name: color indicator toggle3
@@ -10889,7 +10889,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 433646624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -11266,8 +11266,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463652070}
-  - component: {fileID: 463652073}
   - component: {fileID: 463652072}
+  - component: {fileID: 463652073}
   - component: {fileID: 463652071}
   m_Layer: 0
   m_Name: color indicator toggle3
@@ -11343,7 +11343,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 463652069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -17995,7 +17995,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 835266567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -18870,8 +18870,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907034430}
-  - component: {fileID: 907034433}
   - component: {fileID: 907034432}
+  - component: {fileID: 907034433}
   - component: {fileID: 907034431}
   m_Layer: 0
   m_Name: toggle1
@@ -18947,7 +18947,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 907034429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c4d8b533b45949bf25adae9058071, type: 3}
+  m_Script: {fileID: 11500000, guid: 041558519cf091f4aa10ba473ace0137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 0}
@@ -20363,6 +20363,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 208000991}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &982535604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20421,7 +20434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208000991}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -27668,6 +27681,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 835266571}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1373615051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27726,7 +27752,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 835266571}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -36593,6 +36619,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 463652073}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1938738848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36651,7 +36690,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463652073}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -47140,6 +47179,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 83044516}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &4461412805173790649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47210,7 +47262,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 83044516}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -47277,6 +47329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4461412805202037970}
   - component: {fileID: 4461412805202037973}
+  - component: {fileID: 4461412805202037974}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -47310,6 +47363,27 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &4461412805202037974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461412805202037971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b4a7d925ba8b64897a0dbbf52eed22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraInfoArray:
+  - {fileID: 50704943}
+  - {fileID: 1880337846}
+  - {fileID: 847238}
+  - {fileID: 505007042}
+  - {fileID: 330453362}
+  - {fileID: 1023940662}
+  - {fileID: 1343971742}
+  extraInfoToggle: 0
 --- !u!1 &4461412805426334740
 GameObject:
   m_ObjectHideFlags: 0
@@ -49676,7 +49750,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 420655365}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -49777,6 +49851,19 @@ MonoBehaviour:
       - m_Target: {fileID: 3632813100028277326}
         m_TargetAssemblyTypeName: 
         m_MethodName: Submit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 420655365}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50793,6 +50880,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 433646628}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5234426578059147773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50863,7 +50963,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 433646628}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -51282,6 +51382,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 907034433}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChanger3,
+          Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5234426578428404730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51340,7 +51453,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 907034433}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ColorChangerUnityUI,
           Microsoft.MixedReality.Toolkit.SDK
         m_MethodName: RandomColor
@@ -54485,19 +54598,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cbde7890146c3024d928b7afc2e16065, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   Events:
   - Event:
       m_PersistentCalls:
