@@ -7,6 +7,12 @@ using System.Collections.Generic;
 
 namespace Microsoft.MixedReality.Toolkit.UI
 {
+
+ public enum ColorState {
+     Grey, 
+     Green, 
+     Red
+ }
     /// <summary>
     /// Change the color of the material on a UnityUI Graphic (ex. Image).  Useful for visualizing button presses.
     /// </summary>
@@ -16,13 +22,26 @@ namespace Microsoft.MixedReality.Toolkit.UI
         [SerializeField]
         private Graphic graphic;
 
-
+        private ColorState state; 
         private void Start()
         {
+            state = ColorState.Grey;
             if (graphic == null)
             {
                 graphic = GetComponent<Graphic>(); //checkpoint3
             }
+        }
+
+        private void Update() {
+            if (state == ColorState.Grey)
+            {
+                graphic.color = Color.grey;
+            }
+            else if (state == ColorState.Green)
+            {
+
+            }
+            
         }
 
         /// <summary>
@@ -52,9 +71,21 @@ namespace Microsoft.MixedReality.Toolkit.UI
                 checkPoints["EF3"] = 1;  //EF = elephant foot exists
                 print(checkPoints["EF3"].ToString());
             }
+        }
 
-
-
+        public void ChangeColor(){
+            if (state == ColorState.Grey)
+            {
+                state = ColorState.Green;
+            }
+            else if (state == ColorState.Green)
+            {
+                state = ColorState.Red;
+            }
+            else if (state == ColorState.Red)
+            {
+                state = ColorState.Grey;
+            }
         }
     }
 }

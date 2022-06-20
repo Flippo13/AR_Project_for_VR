@@ -8,6 +8,10 @@ namespace Microsoft.MixedReality.Toolkit.UI
     //[AddComponentMenu("Scripts/MRTK/Examples/ColorChangerUnityUI")]
     public class GetData : MonoBehaviour
     {
+        public GameObject[] buttonArray; 
+
+        private Graphic[] toggleArray; 
+
         private Graphic toggle1;
         private Graphic toggle2;
         private Graphic toggle3;
@@ -17,29 +21,23 @@ namespace Microsoft.MixedReality.Toolkit.UI
         public GameObject button3;
 
         //[SerializeField]
-        private Graphic graphic;
         // Start is called before the first frame update
-        private void Start()
+        private async void Start()
         {
+            toggleArray = new Graphic[buttonArray.Length];
 
-           // toggle1 = GameObject.Find("PressableButtonsTestCanvas").transform.Find("toggle1").gameObject;
-            toggle1 = button1.GetComponentInChildren<Graphic>();
-            toggle2 = button2.GetComponentInChildren<Graphic>();
-            toggle3 = button3.GetComponentInChildren<Graphic>();
-
-            
+            for (int i = 0; i < buttonArray.Length; i++){
+                toggleArray[i] = buttonArray[i].GetComponentInChildren<Graphic>();
+            }
         }
 
         public void GetColor()
         {
             //graphic.color = UnityEngine.Random.ColorHSV();
             // graphic = toggle1.GetComponent<Graphic>();
-            Debug.Log("Image 1 " + toggle1.color + " Image 2 " + toggle2.color + " Image 3 " + toggle3.color);
+            Debug.Log("Image 1 " + toggleArray[0].color + " Image 2 " + toggleArray[1].color + " Image 3 " + toggleArray[2].color);
 
             toggle2.color = new Color(0,0,1,1);
-
-
-
         }
 
         // Update is called once per frame
