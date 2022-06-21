@@ -2,42 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using TMPro;
 
 namespace Microsoft.MixedReality.Toolkit.UI
 {
     //[AddComponentMenu("Scripts/MRTK/Examples/ColorChangerUnityUI")]
     public class GetData : MonoBehaviour
     {
+        public string filename = "";
+
         public GameObject[] buttonArray; 
+        [SerializeField]
+        private Image[] toggleArray; 
+        [SerializeField]
+        private TextMeshProUGUI[] taskTextArray;
 
-        private Graphic[] toggleArray; 
-
-        private Graphic toggle1;
-        private Graphic toggle2;
-        private Graphic toggle3;
-
-        public GameObject button1;
-        public GameObject button2;
-        public GameObject button3;
+        public TextMeshPro testMesh; 
+        public TextMeshProUGUI textMeshGUI;
 
         //[SerializeField]
         // Start is called before the first frame update
-        private async void Start()
+         void Awake()
         {
-            toggleArray = new Graphic[buttonArray.Length];
+            toggleArray = new Image[buttonArray.Length];
+            taskTextArray = new TextMeshProUGUI[buttonArray.Length];
+
+            if (filename == "")
+                filename = Application.dataPath + "/qualityControlReport.csv";
+            else
+                filename = Application.dataPath + "/"+filename+".csv";
 
             for (int i = 0; i < buttonArray.Length; i++){
-                toggleArray[i] = buttonArray[i].GetComponentInChildren<Graphic>();
+                toggleArray[i] = buttonArray[i].GetComponentInChildren<Image>();
+                taskTextArray[i] = buttonArray[i].GetComponentInChildren<TextMeshProUGUI>();
             }
-        }
 
-        public void GetColor()
-        {
-            //graphic.color = UnityEngine.Random.ColorHSV();
-            // graphic = toggle1.GetComponent<Graphic>();
-            Debug.Log("Image 1 " + toggleArray[0].color + " Image 2 " + toggleArray[1].color + " Image 3 " + toggleArray[2].color);
-
-            toggle2.color = new Color(0,0,1,1);
+            TextWriter tw = new StreamWriter(filename, false);
+            tw.WriteLine("Tasks, Status");
+            tw.Close();
         }
 
         // Update is called once per frame
@@ -45,5 +48,32 @@ namespace Microsoft.MixedReality.Toolkit.UI
         {
 
         }
+
+
+        public void WriteReport(){
+            TextWriter tw = new StreamWriter(filename, false);
+            tw.WriteLine("Task, Status");
+            tw.Close();
+            tw = new StreamWriter(filename, true);
+            string status = "";
+            for(int i = 0; i < buttonArray.Length; i++)
+            {
+                if (toggleArray[i].color == Color.green){
+                    status = "Passed";
+                } 
+                else if (toggleArray[i].color == Color.red)
+                {
+                    status = "Failed";
+                }
+                else if (toggleArray[i].color == Color.grey)
+                {
+                    status = "Not Checked";
+                }
+
+                tw.WriteLine(taskTextArray[i].text + "," + status);
+            }
+            tw.Close();
+        }
     }
 }
+
